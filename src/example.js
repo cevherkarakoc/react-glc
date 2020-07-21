@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react';
 
-import MM, { Components, AnimationFrameContext, UNIFORM, Canvas, Clear, Mesh, Program, Uniform } from './index';
+import { AnimationFrameContext, UNIFORM, Canvas, Clear, Mesh, Program, Uniform } from './index';
 
 const FramePrinter = () => {
     const { frame, time, delta } = useContext(AnimationFrameContext);
