@@ -1,4 +1,4 @@
-import React, { useContext, useLayoutEffect, useState, useEffect } from 'react';
+import React, { Fragment, useContext, useLayoutEffect, useState, useEffect } from 'react';
 import { AnimationFrameContext, CanvasContext, ProgramContext, MeshAssetContext } from '../contexts';
 import { objToHashSymbol } from '../helper';
 
@@ -46,7 +46,7 @@ export const Mesh = ({ children, attributesData, indices, drawMode = 'TRIANGLES'
     }
   }, [gl, mesh, frame, attributes, drawMode]);
 
-  return <>
+  return <Fragment>
     {mesh && children}
-  </>;
+  </Fragment>;
 };

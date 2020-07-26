@@ -1,4 +1,4 @@
-import React, { useContext, useLayoutEffect } from 'react';
+import React, { Fragment,useContext, useLayoutEffect } from 'react';
 import { AnimationFrameContext, CanvasContext } from '../contexts';
 
 export const Clear = () => {
@@ -9,5 +9,5 @@ export const Clear = () => {
     gl.clear(gl.COLOR_BUFFER_BIT);
   }, [gl, frame]);
 
-  return <></>;
+  return <Fragment></Fragment>;
 };

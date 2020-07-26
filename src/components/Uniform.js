@@ -1,4 +1,4 @@
-import React, { useContext, useLayoutEffect, useState, useEffect } from 'react';
+import React, { Fragment, useContext, useLayoutEffect, useState, useEffect } from 'react';
 import { CanvasContext, ProgramContext, AnimationFrameContext } from '../contexts';
 import { UNIFORM } from '../constants';
 
@@ -32,5 +32,5 @@ export const Uniform = ({ name, type, value }) => {
     uniformFn(gl, location, value);
   }, [gl, program, location, value, frame, uniformFn]);
 
-  return <></>;
+  return <Fragment></Fragment>;
 };
